@@ -1,0 +1,1 @@
+$ ./configure --target-list=arm-softmmu --disable-capstone --disable-usb-redir --disable-gtk --disable-kvm
