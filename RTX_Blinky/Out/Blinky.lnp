@@ -1,0 +1,24 @@
+--cpu Cortex-M0+
+".\out\blinky.o"
+".\out\irq_armv6m.o"
+".\out\rtx_delay.o"
+".\out\rtx_evflags.o"
+".\out\rtx_evr.o"
+".\out\rtx_kernel.o"
+".\out\rtx_lib.o"
+".\out\rtx_memory.o"
+".\out\rtx_mempool.o"
+".\out\rtx_msgqueue.o"
+".\out\rtx_mutex.o"
+".\out\rtx_semaphore.o"
+".\out\rtx_system.o"
+".\out\rtx_thread.o"
+".\out\rtx_timer.o"
+".\out\rtx_config.o"
+".\out\os_systick.o"
+".\out\startup_cmsdk_cm0plus.o"
+".\out\system_cmsdk_cm0plus.o"
+--library_type=microlib --strict --scatter ".\RTE\Device\CMSDK_CM0plus\ac6_arm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Out\Blinky.map" -o .\Out\Blinky.axf
